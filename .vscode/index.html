@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container m-5">
+        <div class="card">
+            <h2 class="p-3 bg-light ">Payment form example</h2>
+            <div class="alert alert-danger m-3 p-3" role="alert">
+                Some fields are missing
+            </div>
+            <div class="p-4">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Card #</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">CVC #</label>
+                            <input type="text" class="form-control" placeholder="0000">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" placeholder="Amount">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Your last name">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" placeholder="Your City">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select">
+                                <option>Pick a state</option>
+                                <option>New York</option>
+                                <option>California</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <!-- Métodos de Pago (Izquierda) -->
+                        <div class="d-flex flex-column">
+                            <label class="form-label">We accept:</label>
+                            <div class="border p-3 rounded bg-secondary d-flex gap-3">
+                                <input type="radio" class="btn-check" name="paymentMethod" id="mastercard" autocomplete="off">
+                                <label class="btn btn-outline-light" for="mastercard">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </label>
+            
+                                <input type="radio" class="btn-check" name="paymentMethod" id="visa" autocomplete="off">
+                                <label class="btn btn-outline-light" for="visa">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </label>
+            
+                                <input type="radio" class="btn-check" name="paymentMethod" id="amazon-pay" autocomplete="off">
+                                <label class="btn btn-outline-light" for="amazon-pay">
+                                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                                </label>
+            
+                                <input type="radio" class="btn-check" name="paymentMethod" id="paypal" autocomplete="off">
+                                <label class="btn btn-outline-light" for="paypal">
+                                    <i class="fa-brands fa-cc-paypal"></i>
+                                </label>
+                            </div>
+                        </div>
+            
+                        <!-- Campo de Mensaje (Derecha) -->
+                        <div class="d-flex flex-column col-md-6 col-lg-7">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control w-80" rows="5"></textarea>
+                            <small class="text-muted">Add any notes here.</small>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            
+            <div class="card bg-light">
+                <div class="d-flex justify-content-end  p-3">
+                    <button type="reset" class="btn btn-secondary me-2">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
